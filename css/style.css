@@ -79,7 +79,6 @@ body {
   margin-bottom: 0;
 }
 .cell {
-  /* position: relative; */
   width: 10rem;
   height: 10rem;
   border-radius: 7px;
