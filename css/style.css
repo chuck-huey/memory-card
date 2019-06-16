@@ -79,15 +79,50 @@ body {
   margin-bottom: 0;
 }
 .cell {
-  position: relative;
+  /* position: relative; */
   width: 10rem;
   height: 10rem;
-  background-color: #0c385f;
   border-radius: 7px;
 }
 .card {
+  perspective: 150rem;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100%;
 }
+
 .front {
+  background-color: #0c385f;
+  transition: all 0.8s ease;
+  color: #eee;
 }
 .back {
+  background-color: orangered;
+  transition: all 0.8s ease;
+  transform: rotateY(-180deg);
+  color: #eee;
+}
+
+.card,
+.back,
+.front {
+  border-radius: inherit;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  box-shadow: 1px 1px 10px 5px #a8a8b9;
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+.card:hover .back {
+  transform: rotateY(0);
 }
