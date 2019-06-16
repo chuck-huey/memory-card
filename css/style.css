@@ -79,8 +79,15 @@ body {
   margin-bottom: 0;
 }
 .cell {
+  position: relative;
   width: 10rem;
   height: 10rem;
   background-color: #0c385f;
   border-radius: 7px;
+}
+.card {
+}
+.front {
+}
+.back {
 }
