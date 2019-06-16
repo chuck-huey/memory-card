@@ -104,8 +104,8 @@ body {
 }
 
 .card,
-.back,
-.front {
+.front,
+.back {
   border-radius: inherit;
 }
 
